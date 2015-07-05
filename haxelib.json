@@ -1,0 +1,10 @@
+{
+  "name": "Electron",
+  "url": "https://github.com/seibe/hxExtern/",
+  "license": "MIT",
+  "tags": [ "js", "node.js", "io.js", "api", "electron", "atom-shell" ],
+  "description": "haxe extern for electron (atom shell)",
+  "version": "0.0.1",
+  "releasenote": "first release.",
+  "contributors": ["seibe"]
+}
