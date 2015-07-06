@@ -1,0 +1,7 @@
+-main Index
+-cp src
+-cp demo/src
+-dce full
+-lib nodejs
+-js demo/bin/index.js
+#-debug
