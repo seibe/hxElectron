@@ -1,5 +1,8 @@
 package electron;
+
+import electron.Electron;
 import js.html.Element;
+import haxe.extern.Rest;
 
 @:enum
 abstract WebViewEventType(String) to String {
@@ -75,9 +78,9 @@ extern class WebViewElement extends Element
 	function unselect():Void;
 	function replace(text:String):Void;
 	function replaceMisspelling(text:String):Void;
-	function send(channel:String, ?args:Rest<Dynamic>):Void;
+	function send(channel:String, args:Rest<Dynamic>):Void;
 	
 	// same with WebContents
 	function print(?options: { ?silent:Bool, ?printBackground:Bool } ):Void;
-	function printToPDF(options: { ?marginsType:Int, ?printBackground:Bool, ?printSelectionOnly:Bool, ?landscape:Bool }, callback:NodeListener):Void;
+	function printToPDF(options: { ?marginsType:Int, ?printBackground:Bool, ?printSelectionOnly:Bool, ?landscape:Bool }, callback:ElectronFunction):Void;
 }
